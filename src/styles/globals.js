@@ -10,8 +10,11 @@ const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
         outline: none;
         font-family: ${props => props.theme.fonts.main};
-        background-color: ${props => props.theme.colors.background1};
         color: #fff;
+    }
+    
+    html {
+        background-color: ${props => props.theme.colors.background1};
     }
 
     h1,h2,h3,h4 {

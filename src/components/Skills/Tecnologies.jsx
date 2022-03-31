@@ -1,7 +1,18 @@
-import { Skills } from "./Skills";
+import { Skills } from "./Skills"
 
-import { List, ListItem } from "./Tecnologies.styles";
-import { Section, SectionDivider, SectionSubTitle } from "../../styles/globalComponentsStyles";
+import { 
+  List, 
+  ListContainer, 
+  ListItem, 
+  ListParagraph, 
+  ListTitle 
+} from "./Tecnologies.styles"
+import { 
+  Section, 
+  SectionDivider,
+   SectionSubTitle, 
+   SectionText 
+} from "../../styles/globalComponentsStyles"
 
 export default function Tecnologies() {
   return(
@@ -10,15 +21,21 @@ export default function Tecnologies() {
       <SectionSubTitle>
         Minhas Skills
       </SectionSubTitle>
-      renderizando litas
+      <SectionText>
+        Tecnologias as quais eu me aperfeiçoo como desenvolvedor para criar e manter meus projetos
+      </SectionText>
       <List>
         {Skills.map(Skill => (
           <ListItem key={Skill.slug}>
             <picture>
-              <Skill.Component size="30px" />
+              <Skill.Component size="40px" />
             </picture>
-            <h3>{Skill.title}</h3>
-            <Skill.Description />
+            <ListContainer>
+              <ListTitle>{Skill.title}</ListTitle>
+              <ListParagraph>
+                <Skill.Description />
+              </ListParagraph>
+            </ListContainer>
           </ListItem>
         ))}
       </List>

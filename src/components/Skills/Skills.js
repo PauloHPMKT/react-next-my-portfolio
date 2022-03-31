@@ -1,4 +1,4 @@
-import { FaHtml5, FaCss3Alt, FaJsSquare} from 'react-icons/fa'
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact} from 'react-icons/fa'
 
 export const Skills = [
     {
@@ -19,5 +19,10 @@ export const Skills = [
         title: "JavaScript",
         Description: () => <>Create page interactions</>
     },
-
+    {
+        slug: "react-js",
+        Component: FaReact,
+        title: "React JS",
+        Description: () => <>Create user interfaces patterns</>
+    },
 ]
