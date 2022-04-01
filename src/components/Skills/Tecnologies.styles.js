@@ -4,7 +4,7 @@ export const List = styled.ul `
     display: flex;
     flex-wrap:wrap;
     padding-top: 60px;
-    justify-content: space-between;
+    //justify-content: space-between;
 `
 
 export const ListItem = styled.li `
@@ -18,7 +18,7 @@ export const ListItem = styled.li `
     border-radius: 20px;
     border: 3px solid rgba(255, 255, 255, 0.18);
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px;
     cursor: pointer;
 
     &:hover {
