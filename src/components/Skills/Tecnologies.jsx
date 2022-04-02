@@ -10,8 +10,8 @@ import {
 import { 
   Section, 
   SectionDivider,
-   SectionSubTitle, 
-   SectionText 
+  SectionSubTitle, 
+  SectionText 
 } from "../../styles/globalComponentsStyles"
 
 export default function Tecnologies() {

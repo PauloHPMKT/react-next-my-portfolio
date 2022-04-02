@@ -21,7 +21,7 @@ export default function About() {
       <ContentSection>
         <SectionInto>
           <SectionText>
-            Comecei no design em meados de 2007, então entrei no mundo freelancer prestando meus serviços de criação e edição gráfica. Após alguns anos retomei as atividades e buscando profissionalizar meus serviços.
+            Comecei no design em meados de 2007, então entrei no mundo freelancer prestando meus serviços de criação e edição gráfica. Após alguns anos decidi profissionalizar meus serviços.
             <br/><br/>
             Adquirindo novas skills mergulhei no mundo do desenvolvimento web e venho adquirindo habilidades incríveis às quais compartilho com vocês, com o objetivo ajudar aqueles que sonham em andar pela trilha da programação! Fiquem a vontade e vamos incrementar conhecimento juntos!! Dev++.
           </SectionText>
