@@ -1,14 +1,48 @@
+import Link from 'next/link'
+import { FaRegLightbulb, FaCode } from 'react-icons/fa'
 
-import { Section, SectionDivider, SectionSubTitle } from '../../styles/globalComponentsStyles'
+import CardOp from '../CardsOp/CardOp'
+
+import { 
+  ContentSection, 
+  Section, 
+  SectionDivider, 
+  SectionSubTitle, 
+  SectionText 
+} from '../../styles/globalComponentsStyles'
 
 export default function Projects() {
+
   return(
-    <Section id='projects'>
+    <Section id='portfolio'>
       <SectionDivider />
       <SectionSubTitle>
         Projetos
       </SectionSubTitle>
-      <p>oi</p>
+      <SectionText>
+        Passe o mouse ou clique nos icones para ascender as luzes e conhecer meus principais trabalhos!
+      </SectionText>
+      <ContentSection>
+        <Link href="/portfolio/develop">
+          <a>
+            <CardOp
+              icon={<FaCode />}
+              title="Desenvolvimento Web"
+              description="Veja meus projeto web, o quais utilizo as tecnologia relacionadas na seção acima!"
+            />
+          </a>
+        </Link>
+        <Link href="/portfolio/design">
+          <a>
+            <CardOp 
+              icon={<FaRegLightbulb />}
+              title="Design Criativo"
+              description="Aqui compartilho alguns de meus projetos de design mais importantes."
+            />
+          </a>
+        </Link>
+      </ContentSection>
+      
     </Section>
   )
 }
