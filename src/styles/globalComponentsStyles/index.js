@@ -50,6 +50,18 @@ export const SectionText = styled.p `
   margin-bottom: 20px;
 `
 
+export const ListTitle = styled.h3 `
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+`
+
+export const ListParagraph = styled.p `
+    font-size: 20px;
+    color: #cecece;
+`
+
 export const SectionDivider = styled.div `
   width: 200px;
   height: 5px;

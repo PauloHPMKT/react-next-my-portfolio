@@ -25,8 +25,10 @@ export default function About() {
             <br/><br/>
             Adquirindo novas skills mergulhei no mundo do desenvolvimento web e venho adquirindo habilidades incríveis às quais compartilho com vocês, com o objetivo ajudar aqueles que sonham em andar pela trilha da programação! Fiquem a vontade e vamos incrementar conhecimento juntos!! Dev++.
           </SectionText>
-          <Button>
-            Contact me
+          <Button onClick={() => {       
+            window.location = `/portfolio/develop`  
+          }}>
+            Meus projetos
           </Button>
         </SectionInto>
         <ImageContainer>

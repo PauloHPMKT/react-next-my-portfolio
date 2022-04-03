@@ -4,14 +4,14 @@ import {
   List, 
   ListContainer, 
   ListItem, 
-  ListParagraph, 
-  ListTitle 
 } from "./Tecnologies.styles"
 import { 
   Section, 
   SectionDivider,
   SectionSubTitle, 
-  SectionText 
+  SectionText, 
+  ListTitle,
+  ListParagraph, 
 } from "../../styles/globalComponentsStyles"
 
 export default function Tecnologies() {

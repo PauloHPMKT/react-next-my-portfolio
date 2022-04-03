@@ -46,14 +46,5 @@ export const ListContainer = styled.div `
     margin-left: 18px;  
 `
 
-export const ListParagraph = styled.p `
-    font-size: 20px;
-    color: #cecece;
-`
 
-export const ListTitle = styled.h3 `
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: 0.02em;
-    margin-bottom: 8px;
-`
+

@@ -11,17 +11,17 @@ export default function Navigation() {
           </Link>
         </li>
         <li>
-          <Link href="#about">
+          <Link href="/#about">
             <LinkMenu>About me</LinkMenu>
           </Link>
         </li>
         <li>
-          <Link href="#skills">
+          <Link href="/#skills">
             <LinkMenu>Skills</LinkMenu>
           </Link>
         </li>
         <li>
-          <Link href="/">
+          <Link href="/#portfolio">
             <LinkMenu>Portfolio</LinkMenu>
           </Link>
         </li>
