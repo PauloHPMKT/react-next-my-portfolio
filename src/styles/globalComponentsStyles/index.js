@@ -60,6 +60,7 @@ export const ListTitle = styled.h3 `
 export const ListParagraph = styled.p `
     font-size: 20px;
     color: #cecece;
+    margin-bottom: 30px;
 `
 
 export const SectionDivider = styled.div `
@@ -75,3 +76,13 @@ export const ImageContainer = styled.div `
     justify-content: center;
     align-items: center;
 ` 
+
+export const Card = styled.div `
+    width: 400px;
+    height: 550px;
+    background-color: #333;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 20px;
+    border: 3px solid #444;
+`
