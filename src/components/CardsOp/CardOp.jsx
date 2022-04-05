@@ -1,6 +1,6 @@
-import { ListTitle, ListParagraph } from '../../styles/globalComponentsStyles'
+import { ListTitle, ListParagraph, Card } from '../../styles/globalComponentsStyles'
  
-import { Card, IconCard, ImageCard } from "./CardsOp.styles"
+import { IconCard, ImageCard } from "./CardsOp.styles"
 
 
 export default function CardOp({ title, description, icon }) {
