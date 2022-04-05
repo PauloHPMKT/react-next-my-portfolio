@@ -17,7 +17,6 @@ export const LinkIcon = styled.a `
     border: 3px solid transparent;
 
     &:hover {
-        color: red;
         border: 3px solid #b10101;
         border-radius: 100%;
     }

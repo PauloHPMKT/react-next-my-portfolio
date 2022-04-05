@@ -15,7 +15,7 @@ export default function SocialIcons() {
           </LinkIcon>
         </ListIcons>
         <ListIcons>
-          <LinkIcon href="#">
+          <LinkIcon href="https://www.linkedin.com/in/paulo-sergio-frontend-dev/">
           <i class="fa-brands fa-linkedin"></i>
           </LinkIcon>
         </ListIcons>
