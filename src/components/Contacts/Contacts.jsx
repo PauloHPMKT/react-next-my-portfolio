@@ -1,7 +1,7 @@
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
 import { LinkIcon, ListIcons } from '../SocialIcons/SocialIcons.styles'
-
+import { LinkContact } from './Contact.styles'
 import { 
   ContentSection, 
   Section,
@@ -22,11 +22,11 @@ export default function Contact() {
         <SectionInto>
           <span>E-mail:</span>
           <SectionText>
-            <a href="#">paulodevmais@gmail.com</a>
+            <LinkContact href="#">paulodevmais@gmail.com</LinkContact>
           </SectionText>
           <span>Chama no meu WhatsApp:</span>
           <SectionText>
-            <a href="#">Vamos conversar sobre tecnologia?</a>
+            <LinkContact href="#">Vamos conversar sobre tecnologia?</LinkContact>
           </SectionText>
         </SectionInto>
         <SectionInto >
@@ -49,7 +49,7 @@ export default function Contact() {
               </LinkIcon>
             </ListIcons>
             <ListIcons>
-              <LinkIcon>
+              <LinkIcon href='https://www.linkedin.com/in/paulo-sergio-frontend-dev/'>
                 <FaLinkedin />
               </LinkIcon>
             </ListIcons>
