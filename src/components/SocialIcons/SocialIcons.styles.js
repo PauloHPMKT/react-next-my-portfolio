@@ -4,6 +4,13 @@ export const MediaIcons = styled.ul `
     position: absolute; 
     right: 130px;
     top: 35%; 
+
+    @media ${(props => props.theme.breakpoints.md)} {
+        right: 20px;
+    }
+    @media ${(props => props.theme.breakpoints.sm)} {
+        right: 0;
+    }
 `
 
 export const ListIcons = styled.li `
