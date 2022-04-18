@@ -9,4 +9,8 @@ export const ImageAbout = styled.img `
     &:hover {
         box-shadow: 0 0 15px;
     } 
+
+    @media ${(props => props.theme.breakpoints.md)} {
+        width: 300px;
+    }
 `

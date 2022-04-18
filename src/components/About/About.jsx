@@ -15,10 +15,10 @@ export default function About() {
   return(
     <Section id="about"> 
       <SectionDivider />
-      <SectionSubTitle>
+      <SectionSubTitle main>
         Um pouco sobre mim
       </SectionSubTitle>
-      <ContentSection>
+      <ContentSection row>
         <SectionInto>
           <SectionText>
             Comecei no design em meados de 2007, então entrei no mundo freelancer prestando meus serviços de criação e edição gráfica. Após alguns anos decidi profissionalizar meus serviços.
@@ -31,7 +31,7 @@ export default function About() {
             Meus projetos
           </Button>
         </SectionInto>
-        <ImageContainer>
+        <ImageContainer center>
           <ImageAbout src="/images/about.jpeg" alt="image Paulo" />
         </ImageContainer>
       </ContentSection>
