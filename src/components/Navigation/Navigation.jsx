@@ -1,9 +1,9 @@
 import Link from "next/link"
-import { LinkMenu, MenuBar } from "./Navigation.styles"
+import { Navigate, MenuBar, LinkMenu, MenuMobile } from "./Navigation.styles"
 
-export default function Navigation() {
+export default function Navigation({isOpen}) {
   return(
-    <nav>
+    <Navigate>
       <MenuBar>
         <li>
           <Link href="/">
@@ -26,6 +26,9 @@ export default function Navigation() {
           </Link>
         </li>
       </MenuBar>
-    </nav>
+      <MenuMobile active={isOpen}>
+        <i class="fa-solid fa-bars"></i>
+      </MenuMobile>
+    </Navigate>
   )
 }
