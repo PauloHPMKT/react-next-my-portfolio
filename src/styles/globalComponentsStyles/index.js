@@ -1,26 +1,47 @@
 import styled from 'styled-components'
 
-export const Section = styled.section`
+export const Section = styled.section `
   display: flex;
   flex-direction: ${props => props.row ? "row" : "column"};
+  align-items: flex-start;
   padding: 80px 100px;
+
+  @media ${(props => props.theme.breakpoints.mlg)} {
+    flex-direction: column;
+  }
+  @media ${(props => props.theme.breakpoints.lg)} {
+    padding: 80px 40px;
+  } 
+  @media ${(props => props.theme.breakpoints.sm)} {
+    padding: 80px 15px;
+  } 
 `
 
-export const ContentSection = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+export const ContentSection = styled.div `
+  display: flex;
+  flex-direction: ${props => props.row ? 'row' : 'column-reverse'};
+  align-items: flex-start; 
+ 
+
+  @media ${(props) => props.theme.breakpoints.mlg} {
+    flex-direction: column-reverse;
+  }
 `
 
 export const SectionInto = styled.div `
-    display: flex;
-    flex-direction: column;  
-    width: 50%;
+  display: flex;
+  flex-direction: column;  
+  width: ${props => props.center ? '50%' : '100%'};
+
+  @media ${(props => props.theme.breakpoints.mlg)} {
+    width: 100%;
+    padding-top: 30px;
+  }
 `
 
 export const SectionTitle = styled.h1`
   font-weight: 800;
-  font-size: 75px;
+  font-size: ${props => props.main ? '60px' : '75px'};
   width: max-content;
   max-width: 100%;
   background: linear-gradient(121.57deg, #FFFFFF 40.77%, #b10101 60.15%);
@@ -28,11 +49,15 @@ export const SectionTitle = styled.h1`
   background-clip: text;
   -webkit-text-fill-color: transparent;  
   margin-bottom: 20px;
+
+  @media ${(main => main.theme.breakpoints.mxl)} {
+    font-size: ${(props => props.main ? '60px' : '50px')};
+  }
 `
 
 export const SectionSubTitle = styled.h2`
   font-weight: 600;
-  font-size: ${(props) => props.main ? '65px' : '56px'};
+  font-size: ${(props) => props.main ? '30px' : '56px'};
   max-width: 100%;
   width: max-content;
   background: linear-gradient(121.57deg, #FFFFFF 40.77%, #b10101 60.15%);
@@ -40,6 +65,10 @@ export const SectionSubTitle = styled.h2`
   background-clip: text;
   -webkit-text-fill-color: transparent;  
   margin-bottom: 20px;
+
+  @media ${(props => props.theme.breakpoints.sm)} {
+    font-size: 30px;
+  }
 `
 
 export const SectionText = styled.p `
@@ -48,6 +77,10 @@ export const SectionText = styled.p `
   font-weight: 300;
   letter-spacing: 2px;
   margin-bottom: 20px;
+
+  @media ${(props => props.theme.breakpoints.sm)} {
+    font-size: ${props => props.size ? '20px' : '17px'};
+  } 
 `
 
 export const ListTitle = styled.h3 `
@@ -71,10 +104,14 @@ export const SectionDivider = styled.div `
 `
 
 export const ImageContainer = styled.div `
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: ${props => props.center ? '50%' : '100%'};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media ${(props => props.theme.breakpoints.mlg)} {
+    width: 100%;
+  }
 ` 
 
 export const Card = styled.div `
@@ -85,4 +122,8 @@ export const Card = styled.div `
     padding: 30px;
     border-radius: 20px;
     border: 3px solid #444;
+
+    @media ${(props => props.theme.breakpoints.md)} {
+      width: 300px;
+    }
 `
