@@ -22,4 +22,11 @@ export const ImageHero = styled.img `
     &:hover {
         box-shadow: 0 0 20px;
     }
+
+    @media ${(props => props.theme.breakpoints.mxl)} {
+        width: 350px; 
+    }
+    @media ${(props => props.theme.breakpoints.sm)} {
+        width: 250px; 
+    }
 `
