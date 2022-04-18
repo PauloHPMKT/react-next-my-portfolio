@@ -6,6 +6,8 @@ export const HeaderContainer = styled.header `
    align-items: center;
    width: 100%;
    padding: 15px 0;
+
+   
 `
 
 export const LinkHeader = styled.a `
