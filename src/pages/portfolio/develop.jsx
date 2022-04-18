@@ -8,7 +8,8 @@ import {
   SectionSubTitle, 
   Card, 
   ListTitle, 
-  ListParagraph 
+  ListParagraph, 
+  SectionText
 } from "../../styles/globalComponentsStyles"
 import { ContainerProjects, Cover, ExternalLink } from "../../styles/portfolioStyles/portfolio.styles"
 
@@ -20,6 +21,9 @@ export default function Develop() {
         <SectionSubTitle>
           Meus projetos web
         </SectionSubTitle>
+        <SectionText>
+          Confira alguns de meus principai trabalhos
+        </SectionText>
         <ContentSection>
           <ContainerProjects>
             {
