@@ -1,5 +1,10 @@
 import Link from "next/link"
-import { Navigate, MenuBar, LinkMenu, MenuMobile } from "./Navigation.styles"
+import { 
+  Navigate, 
+  MenuBar, 
+  LinkMenu, 
+  MenuMobile 
+} from "./Navigation.styles"
 
 export default function Navigation({isOpen}) {
   return(
