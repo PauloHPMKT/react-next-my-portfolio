@@ -3,9 +3,9 @@ import Head from 'next/head'
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
 
-import { Container } from '../layouts/Layout.styles'
+import { Container } from './Layout.styles'
 
-export default function Layout({ children }) {
+export default function TemplateDefault({ children }) {
   return( 
     <Container>
       <Head>
