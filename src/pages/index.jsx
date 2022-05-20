@@ -1,5 +1,5 @@
 import TemplateDefault from '../layouts/TemplatetDefault'
-import Hero from '../components/Hero/Hero'
+import Hero from '../components/Hero'
 import About from '../components/About/About'
 import Tecnologies from '../components/Skills/Tecnologies'
 import Projects from '../components/Projects/Project'
