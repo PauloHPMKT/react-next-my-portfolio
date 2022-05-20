@@ -30,3 +30,20 @@ export const ImageHero = styled.img `
         width: 250px; 
     }
 `
+
+
+export const SectionTitle = styled.h1`
+  font-weight: 800;
+  font-size: ${props => props.main ? '75px' : '60px'};
+  width: max-content;
+  max-width: 100%;
+  background: linear-gradient(121.57deg, #FFFFFF 40.77%, #b10101 60.15%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;  
+  margin-bottom: 20px;
+
+  @media ${(props => props.theme.breakpoints.mxl)} {
+    font-size: ${(props => props.main ? '60px' : '50px')};
+  }
+`
