@@ -44,6 +44,10 @@ export const SectionTitle = styled.h1`
   margin-bottom: 20px;
 
   @media ${(props => props.theme.breakpoints.mxl)} {
-    font-size: ${(props => props.main ? '60px' : '50px')};
+    font-size: ${(props => props.main ? '59px' : '50px')};
+  }
+
+  @media ${(props => props.theme.breakpoints.xs)} {
+    font-size: 45px;
   }
 `

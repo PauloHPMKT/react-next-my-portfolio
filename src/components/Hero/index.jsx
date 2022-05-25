@@ -1,8 +1,8 @@
 import Button from "../Button/Button"
 import SocialIcons from "../SocialIcons/SocialIcons"
-import { Section } from "../../styles/globalComponentsStyles"
 
-import { 
+import {
+  Section, 
   ContentSection, 
   SectionText, 
   SectionInto, 
