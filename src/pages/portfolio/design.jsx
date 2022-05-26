@@ -1,9 +1,9 @@
-import Layout from "../../layouts/Layout"
+import TemplateDefault from "../../layouts/TemplatetDefault"
 import { Section, SectionDivider, SectionSubTitle, SectionText, ContentSection } from "../../styles/globalComponentsStyles"
 
 export default function Design() {
   return(
-    <Layout>
+    <TemplateDefault>
       <Section>
         <SectionDivider />
         <SectionSubTitle>
@@ -16,7 +16,7 @@ export default function Design() {
           <p style={{margin: '150px 0',}}>Aguardem, Estou agrupando meus projetos para que vocês possam conferir!</p>
         </ContentSection>
       </Section>
-    </Layout>
+    </TemplateDefault>
   )
 }
 

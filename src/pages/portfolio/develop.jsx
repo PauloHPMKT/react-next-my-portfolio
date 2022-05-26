@@ -1,4 +1,4 @@
-import Layout from "../../layouts/Layout"
+import TemplateDefault from "../../layouts/TemplatetDefault"
 import { projects } from '../../../constants/constants'
 
 import { 
@@ -15,7 +15,7 @@ import { ContainerProjects, Cover, ExternalLink } from "../../styles/portfolioSt
 
 export default function Develop() {
   return(
-    <Layout>
+    <TemplateDefault>
       <Section>
         <SectionDivider />
         <SectionSubTitle>
@@ -27,11 +27,11 @@ export default function Develop() {
         <ContentSection>
           <ContainerProjects>
             {
-              projects.map((project, i) => {
+              projects.map((project, id) => {
                 return(
                   <Card>
-                    <Cover src={project.image} alt="site airlins" />
-                    <ListTitle key={i}>{project.title}</ListTitle>
+                    <Cover src={project.image} alt={project.title} />
+                    <ListTitle key={id}>{project.title}</ListTitle>
                     <ListParagraph>{project.description}</ListParagraph>
                     <ExternalLink href={project.visit}>
                       Ver Demo
@@ -46,6 +46,6 @@ export default function Develop() {
           </ContainerProjects>
         </ContentSection>
       </Section>
-    </Layout>
+    </TemplateDefault>
   )
 }

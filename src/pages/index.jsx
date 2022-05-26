@@ -1,9 +1,9 @@
 import TemplateDefault from '../layouts/TemplatetDefault'
 import Hero from '../components/Hero'
-import About from '../components/About/About'
-import Tecnologies from '../components/Skills/Tecnologies'
-import Projects from '../components/Projects/Project'
-import Contact from '../components/Contacts/Contacts'
+import About from '../components/About'
+import Tecnologies from '../components/Skills'
+import Projects from '../components/Projects'
+import Contact from '../components/Contacts'
 
 export default function Home() {
   return(
