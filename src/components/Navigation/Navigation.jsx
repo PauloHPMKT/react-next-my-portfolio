@@ -1,4 +1,7 @@
 import Link from "next/link"
+
+import { AiOutlineBars } from 'react-icons/ai'
+
 import { 
   Navigate, 
   MenuBar, 
@@ -32,7 +35,7 @@ export default function Navigation({isOpen}) {
         </li>
       </MenuBar>
       <MenuMobile active={isOpen}>
-        <i class="fa-solid fa-bars"></i>
+        <AiOutlineBars />
       </MenuMobile>
     </Navigate>
   )
