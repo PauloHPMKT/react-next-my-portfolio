@@ -18,10 +18,10 @@ export default function Tecnologies() {
   return(
     <Section id="skills">
       <SectionDivider />
-      <SectionSubTitle>
+      <SectionSubTitle size>
         Minhas Skills
       </SectionSubTitle>
-      <SectionText>
+      <SectionText size>
         Tecnologias as quais eu me aperfeiçoo como desenvolvedor para criar e manter meus projetos
       </SectionText>
       <List>

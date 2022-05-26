@@ -2,13 +2,17 @@ import styled from 'styled-components'
 
 export const List = styled.ul `
     display: flex;
+    justify-content: center;
     flex-wrap:wrap;
     padding-top: 60px;
-    //justify-content: space-between;
+
+    @media ${(props => props.theme.breakpoints.md)} {
+        padding-top: 30px;
+    }
 `
 
 export const ListItem = styled.li `
-    width: 320px;
+    width: 300px;
     display: flex;
     flex-direction: row;
     border: 1px solid #fff;

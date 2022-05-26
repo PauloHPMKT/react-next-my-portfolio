@@ -1,4 +1,12 @@
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaSass, FaNodeJs, FaGitAlt } from 'react-icons/fa'
+import { 
+    FaHtml5, 
+    FaCss3Alt, 
+    FaJsSquare, 
+    FaReact, 
+    FaSass, 
+    FaNodeJs, 
+    FaGitAlt 
+} from 'react-icons/fa'
 import { SiExpress, SiMongodb } from 'react-icons/si'
 
 export const Skills = [
