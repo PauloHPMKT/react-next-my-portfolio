@@ -1,32 +1,28 @@
 import styled from 'styled-components'
 
-export const Section = styled.section `
-  display: flex;
-  flex-direction: ${props => props.row ? "row" : "column"};
-  align-items: flex-start;
-  padding: 80px 100px;
+export const Section = styled.section`
+  padding: 100px 0;
 
-  @media ${(props => props.theme.breakpoints.mlg)} {
-    flex-direction: column;
+  @media ${(props => props.theme.breakpoints.xl)} {  
+    padding: 80px 20px;
   }
-  @media ${(props => props.theme.breakpoints.lg)} {
-    padding: 80px 40px;
-  } 
   @media ${(props => props.theme.breakpoints.sm)} {
     padding: 80px 15px;
-  } 
-`
-
-export const ContentSection = styled.div `
-  display: flex;
-  flex-direction: ${props => props.row ? 'row' : 'column-reverse'};
-  align-items: flex-start; 
- 
-
-  @media ${(props) => props.theme.breakpoints.mlg} {
-    flex-direction: column-reverse;
   }
 `
+
+
+export const ContentSection = styled.div`
+  display: flex;
+  flex-direction: ${props => props.row ? 'row' : 'column'};
+  justify-content: center;
+  align-items: center;
+  
+  @media ${(props => props.theme.breakpoints.mlg)} {
+    flex-direction: column-reverse; 
+  }
+`
+
 
 export const SectionInto = styled.div `
   display: flex;
@@ -39,37 +35,27 @@ export const SectionInto = styled.div `
   }
 `
 
-export const SectionTitle = styled.h1`
-  font-weight: 800;
-  font-size: ${props => props.main ? '60px' : '75px'};
-  width: max-content;
-  max-width: 100%;
-  background: linear-gradient(121.57deg, #FFFFFF 40.77%, #b10101 60.15%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;  
-  margin-bottom: 20px;
-
-  @media ${(main => main.theme.breakpoints.mxl)} {
-    font-size: ${(props => props.main ? '60px' : '50px')};
-  }
-`
 
 export const SectionSubTitle = styled.h2`
   font-weight: 600;
-  font-size: ${(props) => props.main ? '30px' : '56px'};
+  font-size: ${props => props.size ? '56px' : '40px'};
   max-width: 100%;
   width: max-content;
   background: linear-gradient(121.57deg, #FFFFFF 40.77%, #b10101 60.15%);
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent;  
+  -webkit-text-fill-color: transparent; 
   margin-bottom: 20px;
+
+  @media ${(props => props.theme.breakpoints.md)} {
+    font-size: ${(props => props.size ? '39px' : '30px')};
+  }
 
   @media ${(props => props.theme.breakpoints.sm)} {
     font-size: 30px;
   }
 `
+
 
 export const SectionText = styled.p `
   font-size: ${props => props.theme.fonts.text};
@@ -83,18 +69,21 @@ export const SectionText = styled.p `
   } 
 `
 
+
 export const ListTitle = styled.h3 `
-    font-size: 28px;
+    font-size: 25px;
     font-weight: 700;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
 `
 
+
 export const ListParagraph = styled.p `
-    font-size: 20px;
+    font-size: 15px;
     color: #cecece;
     margin-bottom: 30px;
 `
+
 
 export const SectionDivider = styled.div `
   width: 200px;
@@ -116,14 +105,18 @@ export const ImageContainer = styled.div `
 
 export const Card = styled.div `
     width: 400px;
-    height: 550px;
+    height: 500px;
     background-color: #333;
     margin: 20px;
     padding: 30px;
     border-radius: 20px;
     border: 3px solid #444;
 
-    @media ${(props => props.theme.breakpoints.md)} {
+    @media ${(props => props.theme.breakpoints.sm)} {
+      width: 350px;
+    }
+
+    @media ${(props => props.theme.breakpoints.xs)} {
       width: 300px;
     }
 `
