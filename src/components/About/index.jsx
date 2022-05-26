@@ -15,11 +15,11 @@ export default function About() {
   return(
     <Section id="about"> 
       <SectionDivider />
-      <SectionSubTitle main>
+      <SectionSubTitle size>
         Um pouco sobre mim
       </SectionSubTitle>
       <ContentSection row>
-        <SectionInto>
+        <SectionInto center>
           <SectionText>
             Comecei no design em meados de 2007, então entrei no mundo freelancer prestando meus serviços de criação e edição gráfica. Após alguns anos decidi profissionalizar meus serviços.
             <br/><br/>
