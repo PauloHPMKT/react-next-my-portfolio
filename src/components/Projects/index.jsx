@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { FaRegLightbulb, FaCode } from 'react-icons/fa'
 
-import CardOp from '../CardsOp/CardOp'
+import CardOp from '../CardsOp'
 
 import { 
   ContentSection, 
@@ -12,14 +12,13 @@ import {
 } from '../../styles/globalComponentsStyles'
 
 export default function Projects() {
-
   return(
     <Section id='portfolio'>
       <SectionDivider />
-      <SectionSubTitle>
+      <SectionSubTitle size>
         Projetos
       </SectionSubTitle>
-      <SectionText>
+      <SectionText size>
         Passe o mouse ou clique nos icones para ascender as luzes e conhecer meus principais trabalhos!
       </SectionText>
       <ContentSection row>
@@ -42,7 +41,6 @@ export default function Projects() {
           </a>
         </Link>
       </ContentSection>
-      
     </Section>
   )
 }

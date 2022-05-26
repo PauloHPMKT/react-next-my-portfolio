@@ -15,18 +15,18 @@ export default function Contact() {
   return(
     <Section id="contact">
       <SectionDivider />
-        <SectionSubTitle>
+        <SectionSubTitle size>
           Meus Contatos
         </SectionSubTitle>
       <ContentSection style={{ paddingTop: '30px', }}>
         <SectionInto>
           <span>E-mail:</span>
           <SectionText>
-            <LinkContact href="#">paulodevmais@gmail.com</LinkContact>
+            <LinkContact href="mailto:paulodevmais@gmail.com">paulodevmais@gmail.com</LinkContact>
           </SectionText>
           <span>Chama no meu WhatsApp:</span>
           <SectionText>
-            <LinkContact href="#">Vamos conversar sobre tecnologia?</LinkContact>
+            <LinkContact href="https://wa.me/5585988704658">Vamos conversar sobre tecnologia?</LinkContact>
           </SectionText>
         </SectionInto>
         <SectionInto >
