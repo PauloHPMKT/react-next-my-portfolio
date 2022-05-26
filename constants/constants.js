@@ -53,7 +53,7 @@ export const projects = [
         image: '/images/imccalculator.png',
         source: 'https://github.com/Coders-Of-XDA-OT/covid19-status-android',
         visit: 'https://project.vipuljha.com/covid/',
-        id: 5,
+        id: 6,
     },
     {
         title: 'Sujeito Link React',
@@ -61,7 +61,7 @@ export const projects = [
         image: '/images/sujeitolink.png',
         source: 'https://github.com/Coders-Of-XDA-OT/covid19-status-android',
         visit: 'https://project.vipuljha.com/covid/',
-        id: 5,
+        id: 7,
     },
 
 ]
