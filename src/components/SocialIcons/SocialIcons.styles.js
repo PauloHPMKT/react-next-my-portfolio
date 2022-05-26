@@ -5,6 +5,10 @@ export const MediaIcons = styled.ul `
     right: 130px;
     top: 35%; 
 
+    @media ${(props => props.theme.breakpoints.xxl)} {
+        right: 70px; 
+    }
+
     @media ${(props => props.theme.breakpoints.md)} {
         right: 20px;
     }

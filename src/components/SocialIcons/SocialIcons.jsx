@@ -1,21 +1,22 @@
 import { MediaIcons, ListIcons, LinkIcon } from "./SocialIcons.styles"
+import { AiFillInstagram, AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 
 export default function SocialIcons() {
   return(
     <MediaIcons>
       <ListIcons>
         <LinkIcon href="http://www.instagram.com/dev.mais">
-          <i class="fa-brands fa-instagram"></i>
+          <AiFillInstagram />
         </LinkIcon>
       </ListIcons>
       <ListIcons>
         <LinkIcon href="https://www.github.com/PauloHPMKT">
-          <i class="fa-brands fa-github"></i>
+          <AiFillGithub />
         </LinkIcon>
       </ListIcons>
       <ListIcons>
         <LinkIcon href="https://www.linkedin.com/in/paulo-sergio-frontend-dev/">
-        <i class="fa-brands fa-linkedin"></i>
+        <AiFillLinkedin />
         </LinkIcon>
       </ListIcons>
     </MediaIcons>    
