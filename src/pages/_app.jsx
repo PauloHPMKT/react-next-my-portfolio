@@ -1,6 +1,6 @@
 import NextNProgress from 'nextjs-progressbar'
 
-import Theme from '../styles/theme'
+import Theme from '../styles/themeProvider'
 
 function MyApp({ Component, pageProps }) {
   return(
