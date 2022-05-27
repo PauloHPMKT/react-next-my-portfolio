@@ -29,4 +29,8 @@ export const ExternalLink = styled.a `
         box-shadow: 0 0 10px #b10101;
         background-color: #b10101; 
     }
+
+    @media ${(props => props.theme.breakpoints.sm)} {
+        font-size: 13px;
+    }
 `

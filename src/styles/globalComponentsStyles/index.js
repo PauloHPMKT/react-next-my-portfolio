@@ -71,7 +71,7 @@ export const SectionText = styled.p `
 
 
 export const ListTitle = styled.h3 `
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
@@ -104,7 +104,7 @@ export const ImageContainer = styled.div `
 ` 
 
 export const Card = styled.div `
-    width: 400px;
+    width: 350px;
     height: 500px;
     background-color: #333;
     margin: 20px;
