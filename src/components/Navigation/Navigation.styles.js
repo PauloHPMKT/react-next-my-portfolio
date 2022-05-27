@@ -32,13 +32,17 @@ export const LinkMenu = styled.a `
 `
 
 export const MenuMobile = styled.div `
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2000;
     padding: 10px 15px;
     background-color: ${props => props.theme.colors.primary1};
     border-radius: 10px;
     font-size: 40px;
-    display: ${({ active }) => active ? 'flex' : 'none'}; 
+    display: ${props => props.active ? 'none' : 'flex'};
 
-    @media ${(active => active.theme.breakpoints.md)} {
+    @media ${(props => props.theme.breakpoints.md)} {
         display: flex;
     }
 `
