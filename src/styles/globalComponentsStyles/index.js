@@ -71,7 +71,7 @@ export const SectionText = styled.p `
 
 
 export const ListTitle = styled.h3 `
-    font-size: 20px;
+    font-size: ${props => props.theme.fonts.secondary_size};
     font-weight: 700;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
