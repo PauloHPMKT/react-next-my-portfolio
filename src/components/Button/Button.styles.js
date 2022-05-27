@@ -4,7 +4,7 @@ export const ButtonMain = styled.button `
     width: 250px;
     padding: 15px 40px;
     margin: 20px 0;
-    border: 3px solid #fff;
+    border: 3px solid ${props => props.theme.colors.secondary_color};
     border-radius: 25px;
     font-size: 23px;
     color: ${props => props.theme.colors.secondary_color};
