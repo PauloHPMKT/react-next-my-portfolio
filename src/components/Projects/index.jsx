@@ -22,7 +22,7 @@ export default function Projects() {
         Passe o mouse ou clique nos icones para ascender as luzes e conhecer meus principais trabalhos!
       </SectionText>
       <ContentSection row>
-        <Link href="/portfolio/develop">
+        <Link href="/portfolio">
           <a>
             <CardOp
               icon={<FaCode />}
