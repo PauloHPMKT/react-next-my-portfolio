@@ -18,7 +18,7 @@ export default function Develop() {
     <TemplateDefault>
       <Section>
         <SectionDivider />
-        <SectionSubTitle>
+        <SectionSubTitle size>
           Meus projetos web
         </SectionSubTitle>
         <SectionText>
