@@ -1,6 +1,7 @@
-import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa'
+import { AiFillInstagram, AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 
 import { LinkIcon, ListIcons } from '../SocialIcons/SocialIcons.styles'
+
 import { LinkContact } from './Contact.styles'
 import { 
   ContentSection, 
@@ -38,19 +39,19 @@ export default function Contact() {
               justifyContent: 'center',  
             }}
           >
-            <ListIcons >
-              <LinkIcon href='http://www.github.com/PauloHPMKT'>
-                <FaGithub />
+            <ListIcons>
+              <LinkIcon href="http://www.instagram.com/dev.mais">
+                <AiFillInstagram />
               </LinkIcon>
             </ListIcons>
             <ListIcons>
-              <LinkIcon href='http://www.intagram.com/dev.mais'>
-                <FaInstagram />
+              <LinkIcon href="https://www.github.com/PauloHPMKT">
+                <AiFillGithub />
               </LinkIcon>
             </ListIcons>
             <ListIcons>
-              <LinkIcon href='https://www.linkedin.com/in/paulo-sergio-frontend-dev/'>
-                <FaLinkedin />
+              <LinkIcon href="https://www.linkedin.com/in/paulo-sergio-frontend-dev/">
+              <AiFillLinkedin />
               </LinkIcon>
             </ListIcons>
           </ul>
