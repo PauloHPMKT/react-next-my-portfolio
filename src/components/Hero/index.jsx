@@ -1,5 +1,5 @@
 import Button from "../Button"
-import SocialIcons from "../SocialIcons/SocialIcons"
+import SocialIcons from "../SocialIcons"
 
 import {
   Section, 

@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-import Navigation from '../Navigation/Navigation'
+import Navigation from '../Navigation'
 
 
 import { HeaderContainer, LinkHeader } from './Header.styles'
