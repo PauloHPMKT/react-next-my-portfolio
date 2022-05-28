@@ -29,9 +29,9 @@ export default function Develop() {
             {
               projects.map((project, id) => {
                 return(
-                  <Card>
+                  <Card key={id}>
                     <Cover src={project.image} alt={project.title} />
-                    <ListTitle key={id}>{project.title}</ListTitle>
+                    <ListTitle>{project.title}</ListTitle>
                     <ListParagraph>{project.description}</ListParagraph>
                     <ExternalLink href={project.visit}>
                       Ver Demo
