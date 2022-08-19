@@ -112,6 +112,11 @@ export const Card = styled.div `
     border-radius: 20px;
     border: 3px solid #444;
 
+    @media ${(props => props.theme.breakpoints.lg)} {
+      width: 300px;
+      margin: 10px;
+    }
+
     @media ${(props => props.theme.breakpoints.sm)} {
       width: 350px;
     }

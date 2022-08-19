@@ -7,7 +7,7 @@ import { Container } from './Layout.styles'
 
 export default function TemplateDefault({ children }) {
   return( 
-    <Container>
+    <Container size>
       <Head>
         <title>Paulo Sérgio | Frontend Dev</title>
       </Head>

@@ -22,7 +22,7 @@ export const ListItem = styled.li `
     border-radius: 20px;
     border: 3px solid rgba(255, 255, 255, 0.18);
     padding: 20px;
-    margin: 20px;
+    margin: 10px;
     transition: .4s ease;
     cursor: pointer;
 
@@ -41,6 +41,18 @@ export const ListItem = styled.li `
                 transform: translatey(0px);
             }
         }
+    }
+
+    @media ${(props => props.theme.breakpoints.lg)} {
+      width: 200px;
+      padding: 7px;
+      padding-bottom: 0;
+    }
+    @media ${(props => props.theme.breakpoints.sm)} {
+      width: 350px;
+      height: 110px;
+      padding: 10px;
+      padding-bottom: 0;
     }
 `
 

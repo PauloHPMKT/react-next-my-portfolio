@@ -26,6 +26,9 @@ export const ImageHero = styled.img `
     @media ${(props => props.theme.breakpoints.mxl)} {
         width: 350px; 
     }
+    @media ${(props => props.theme.breakpoints.lg)} {
+        width: 300px; 
+    }
     @media ${(props => props.theme.breakpoints.sm)} {
         width: 250px; 
     }

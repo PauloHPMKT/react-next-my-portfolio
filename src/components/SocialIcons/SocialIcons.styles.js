@@ -6,6 +6,7 @@ export const MediaIcons = styled.ul `
     top: 35%; 
 
     @media ${(props => props.theme.breakpoints.xxl)} {
+        top: 250px;
         right: 70px; 
     }
 
@@ -18,14 +19,15 @@ export const MediaIcons = styled.ul `
 `
 
 export const ListIcons = styled.li `
-    padding: 11px;
+    padding: 5px;
 `
 
 export const LinkIcon = styled.a `
     font-size: 26px;
     transition: .6s ease;
-    padding: 7px 12px;
+    padding: 12px;
     border: 3px solid transparent;
+    display: flex;
 
     &:hover {
         border: 3px solid #b10101;

@@ -18,4 +18,12 @@ export const LinkHeader = styled.a `
    &:hover {
       transform: scale(1.1);
    }
+
+   @media ${(props => props.theme.breakpoints.lg)} {
+      width: 130px;
+   }
+
+   @media ${(props => props.theme.breakpoints.sm)} {
+      width: 120px;
+   }
 ` 

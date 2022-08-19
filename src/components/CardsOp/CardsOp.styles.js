@@ -21,6 +21,10 @@ export const ImageCard = styled.div `
         background-color: ${props => props.theme.colors.primary1};
         box-shadow: 0 8px 20px 0 rgba(255, 0, 0, 0.6);
     }
+
+    @media ${(props => props.theme.breakpoints.lg)} {
+        
+    }
 `
 
 export const IconCard = styled.i `

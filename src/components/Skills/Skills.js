@@ -5,7 +5,8 @@ import {
     FaReact, 
     FaSass, 
     FaNodeJs, 
-    FaGitAlt 
+    FaGitAlt,
+    FaVuejs 
 } from 'react-icons/fa'
 import { SiExpress, SiMongodb } from 'react-icons/si'
 
@@ -38,30 +39,36 @@ export const Skills = [
         slug: "react-js",
         Component: FaReact,
         title: "React JS",
-        Description: () => <>Create user interfaces patterns</>
+        Description: () => <>Criando frontend com estruturas declarativas</>
+    },
+    {
+        slug: "vue-js",
+        Component: FaVuejs,
+        title: "Vue JS",
+        Description: () => <>Desenvolvendo frontend com vuex e composition API</>
     },
     {
         slug: "node-js",
         Component: FaNodeJs,
         title: "Node JS",
-        Description: () => <>Create Server side and backend structure</>
+        Description: () => <>Criando servidores e estruturas de backend</>
     },
     {
         slug: "express-js",
         Component: SiExpress,
         title: "Express JS",
-        Description: () => <>Create routes structure and APIrest</>
+        Description: () => <>Criando backend, roteamento e estrutura de APIs</>
     },
     {
         slug: "mongo-db",
         Component: SiMongodb,
         title: "Mongo DB",
-        Description: () => <>Databaase to menager and flow datas</>
+        Description: () => <>DB para armazenamento e gestão de dados</>
     },
     {
         slug: "git",
         Component: FaGitAlt,
         title: "Sitema Git",
-        Description: () => <>Using to versioning code</>
+        Description: () => <>Usando sistema de versionamento de códigos</>
     },
 ]

@@ -3,7 +3,6 @@ import Image from 'next/image'
 
 import Navigation from '../Navigation'
 
-
 import { HeaderContainer, LinkHeader } from './Header.styles'
 
 export default function Header() {
@@ -13,8 +12,8 @@ export default function Header() {
         <LinkHeader>
           <Image 
             src="/images/devmais.png"
-            width={170}
-            height={75}
+            width={175}
+            height={90}
             alt="Dev++ logo"
           />
         </LinkHeader>
