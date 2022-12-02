@@ -1,37 +1,37 @@
-import { createGlobalStyle } from "styled-components"
-import { normalize } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
+import { normalize } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-    ${ normalize }
+	${normalize}
 
-    *,body {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        outline: none;
-        font-family: ${props => props.theme.fonts.main};
-        color: #fff;
-    }
-    
-    html {
-        background-color: ${props => props.theme.colors.background1};
-        background-image: url(/images/code-bg.png);
-        background-repeat: no-repeat;
-        background-size: 70%;
-    }
+	*,body {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+		outline: none;
+		font-family: ${props => props.theme.fonts.main};
+		color: #fff;
+	}
 
-    h1,h2,h3,h4 {
-        font-size: ${props => props.theme.fonts.main};
-    }
+	html {
+		background-color: ${(props) => props.theme.colors.background1};
+		background-image: url(/images/main-bg-devmais.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 
-    ul {
-        list-style: none;
-    }
+	h1,h2,h3,h4 {
+		font-size: ${(props) => props.theme.fonts.main};
+	}
 
-    a {
-        color: inherit;
-        text-decoration: none;
-    }
-`
+	ul {
+		list-style: none;
+	}
 
-export default GlobalStyles
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+`;
+
+export default GlobalStyles;
