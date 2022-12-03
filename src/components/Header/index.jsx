@@ -4,13 +4,15 @@ import Image from "next/image";
 import Navigation from "../Navigation";
 import { HeaderContainer, LinkHeader } from "./Header.styles";
 
+import LogoImage from '../../../public/images/logo-devmais-removebg-preview.png'
+
 export default function Header() {
 	return (
 		<HeaderContainer>
 			<Link href="/" passHref>
 				<LinkHeader>
 					<Image
-						src="/images/logo-devmais-removebg-preview.png"
+						src={LogoImage}
 						width={185}
 						height={55}
 						alt="logo dev++"
