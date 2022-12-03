@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Section = styled.section`
-  padding: 100px 0;
+  padding: 80px 0;
 
   @media ${(props => props.theme.breakpoints.xl)} {
     padding: 80px 20px;
@@ -10,7 +10,6 @@ export const Section = styled.section`
     padding: 80px 15px;
   }
 `
-
 
 export const ContentSection = styled.div`
   display: flex;
