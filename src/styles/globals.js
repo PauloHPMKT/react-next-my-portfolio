@@ -14,10 +14,7 @@ const GlobalStyles = createGlobalStyle`
 	}
 
 	html {
-		background-color: ${(props) => props.theme.colors.background1};
-		background-image: url(/images/main-bg-devmais.png);
-		background-repeat: no-repeat;
-		background-size: cover;
+		background-color: ${props => props.theme.colors.background1};
 	}
 
 	h1,h2,h3,h4 {

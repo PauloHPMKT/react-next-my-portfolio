@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Section = styled.section`
   padding: 100px 0;
 
-  @media ${(props => props.theme.breakpoints.xl)} {  
+  @media ${(props => props.theme.breakpoints.xl)} {
     padding: 80px 20px;
   }
   @media ${(props => props.theme.breakpoints.sm)} {
@@ -17,16 +17,16 @@ export const ContentSection = styled.div`
   flex-direction: ${props => props.row ? 'row' : 'column'};
   justify-content: center;
   align-items: center;
-  
+
   @media ${(props => props.theme.breakpoints.mlg)} {
-    flex-direction: column-reverse; 
+    flex-direction: column-reverse;
   }
 `
 
 
 export const SectionInto = styled.div `
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   width: ${props => props.center ? '50%' : '100%'};
 
   @media ${(props => props.theme.breakpoints.mlg)} {
@@ -44,7 +44,7 @@ export const SectionSubTitle = styled.h2`
   background: linear-gradient(121.57deg, #FFFFFF 40.77%, #b10101 60.15%);
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;
   margin-bottom: 20px;
 
   @media ${(props => props.theme.breakpoints.md)} {
@@ -66,7 +66,7 @@ export const SectionText = styled.p `
 
   @media ${(props => props.theme.breakpoints.sm)} {
     font-size: ${props => props.size ? '20px' : '17px'};
-  } 
+  }
 `
 
 
@@ -88,8 +88,8 @@ export const ListParagraph = styled.p `
 export const SectionDivider = styled.div `
   width: 200px;
   height: 5px;
-  background: linear-gradient(#121212, #b10101); 
-  border-radius: 3px; 
+  background: linear-gradient(#121212, #b10101);
+  border-radius: 3px;
 `
 
 export const ImageContainer = styled.div `
@@ -101,7 +101,7 @@ export const ImageContainer = styled.div `
   @media ${(props => props.theme.breakpoints.mlg)} {
     width: 100%;
   }
-` 
+`
 
 export const Card = styled.div `
     width: 350px;
