@@ -1,7 +1,6 @@
 import { ListTitle, ListParagraph, Card } from '../../styles/globalComponentsStyles'
- 
-import { IconCard, ImageCard } from "./CardsOp.styles"
 
+import { IconCard, ImageCard } from "./CardsOp.styles"
 
 export default function CardOp({ title, description, icon }) {
   return(
@@ -13,7 +12,7 @@ export default function CardOp({ title, description, icon }) {
       </ImageCard>
       <ListTitle>
         {title}
-      </ListTitle> 
+      </ListTitle>
       <ListParagraph>
         {description}
       </ListParagraph>
