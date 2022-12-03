@@ -22,13 +22,13 @@ export const ImageHero = styled.div`
 		}
 	}
 
-	@media ${(props) => props.theme.breakpoints.mxl} {
+	@media ${props => props.theme.breakpoints.mxl} {
 		width: 350px;
 	}
-	@media ${(props) => props.theme.breakpoints.lg} {
+	@media ${props => props.theme.breakpoints.lg} {
 		width: 300px;
 	}
-	@media ${(props) => props.theme.breakpoints.sm} {
+	@media ${props => props.theme.breakpoints.sm} {
 		width: 250px;
 	}
 `;
@@ -46,7 +46,7 @@ export const SectionTitle = styled.h1`
 	margin-bottom: 20px;
 
 	@media ${props => props.theme.breakpoints.mxl} {
-		font-size: ${props => props.main ? "59px" : "50px"};
+		font-size: ${({ main }) => main ? "59px" : "50px"};
 	}
 
 	@media ${props => props.theme.breakpoints.xs} {
