@@ -1,27 +1,53 @@
 import Link from 'next/link'
-import { FaRegLightbulb, FaCode } from 'react-icons/fa'
+import { FaRegLightbulb } from 'react-icons/fa'
+import { BiCodeBlock } from 'react-icons/bi'
+import { MdMobileFriendly } from 'react-icons/md'
 
-import CardOp from '../CardsOp'
+import CardFull from '../CardsOp/CardFull'
 
-import { 
-  ContentSection, 
-  Section, 
-  SectionDivider, 
-  SectionSubTitle, 
-  SectionText 
+import {
+  ContentSection,
+  Section,
+  SectionDivider,
+  SectionSubTitle,
+  SectionText
 } from '../../styles/globalComponentsStyles'
+import { ButtonMain } from '../Button/Button.styles'
 
 export default function Projects() {
-  return(
+	return(
     <Section id='portfolio'>
       <SectionDivider />
-      <SectionSubTitle size>
-        Projetos
+      <SectionSubTitle onSize>
+			Conceitos
       </SectionSubTitle>
-      <SectionText size>
-        Passe o mouse ou clique nos icones para ascender as luzes e conhecer meus principais trabalhos!
+      <SectionText>
+        Utilizo alguns principais conceitos para criação de meus projetos
       </SectionText>
-      <ContentSection row>
+			<ContentSection row justifyPosition>
+				<CardFull
+					icon={<FaRegLightbulb />}
+					title='Design Criativo'
+					description='Costumo dizer que o design é o poder para fazer que sonhos sejam reais e de fato um design tem a capacidade de tornar algo que é visualizado em algo visível. Quando falamos de ser um design criatívo, isso é um diferencial cruscial.'
+				/>
+				<CardFull
+					icon={<BiCodeBlock />}
+					title='Desenvolvimento'
+					description='A criação de cada projeto é um desafio distinto, pois envolve estratégias e um exercício mental intenso, onde colocamos a prova nossa capacidade de raciocínio! Vamos criar juntos?'
+				/>
+				<CardFull
+					icon={<MdMobileFriendly />}
+					title='Design responsivo'
+					description='A criação de cada projeto é um desafio distinto, pois envolve estratégias e um exercício mental intenso, onde colocamos a prova nossa capacidade de raciocínio! Vamos criar juntos?'
+				/>
+			</ContentSection>
+			<ButtonMain>
+				teste
+			</ButtonMain>
+			<ButtonMain>
+				teste
+			</ButtonMain>
+      {/*<ContentSection row>
         <Link href="/portfolio">
           <a>
             <CardOp
@@ -33,14 +59,14 @@ export default function Projects() {
         </Link>
         <Link href="/portfolio/design">
           <a>
-            <CardOp 
+            <CardOp
               icon={<FaRegLightbulb />}
               title="Design Criativo"
               description="Aqui compartilho alguns de meus projetos de design mais importantes."
             />
           </a>
         </Link>
-      </ContentSection>
+			</ContentSection>*/}
     </Section>
   )
 }

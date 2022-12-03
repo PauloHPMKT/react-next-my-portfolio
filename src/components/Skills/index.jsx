@@ -18,11 +18,11 @@ export default function Tecnologies() {
   return(
     <Section id="skills">
       <SectionDivider />
-      <SectionSubTitle fontSize>
+      <SectionSubTitle onSize>
         Minhas Skills
       </SectionSubTitle>
       <SectionText fontSize>
-        Tecnologias as quais eu me aperfeiçoo como desenvolvedor para criar e manter meus projetos
+        Tecnologias as quais eu me aperfeiçoo como desenvolvedor para criar e manter meus projetos. Além buscar entregar minhas melhores performances.
       </SectionText>
       <List>
         {Skills.map(Skill => (

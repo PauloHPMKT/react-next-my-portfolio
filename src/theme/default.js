@@ -2,10 +2,13 @@
 export default {
   // Temp fonts
   fonts: {
-    title: "Open Sans, sans-serif",
-    main: "Open Sans, sans-serif",
+		//font-family
+    title: "century gothic, sans-serif",
+    main: "century gothic, sans-serif",
+		textFamily: "Open Sans, sans-serif",
+    primary_size: "24px",
     secondary_size: "20px",
-    text: "24px",
+		textSizeLg: "17px",
 		//font-weight
 		fontWeight: {
 			thin: 100,

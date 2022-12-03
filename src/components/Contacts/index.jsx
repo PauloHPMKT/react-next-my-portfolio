@@ -3,20 +3,20 @@ import { AiFillInstagram, AiFillGithub, AiFillLinkedin } from 'react-icons/ai'
 import { LinkIcon, ListIcons } from '../SocialIcons/SocialIcons.styles'
 
 import { LinkContact } from './Contact.styles'
-import { 
-  ContentSection, 
+import {
+  ContentSection,
   Section,
-  SectionDivider, 
-  SectionInto, 
-  SectionSubTitle, 
-  SectionText 
+  SectionDivider,
+  SectionInto,
+  SectionSubTitle,
+  SectionText
 } from "../../styles/globalComponentsStyles"
 
 export default function Contact() {
   return(
     <Section id="contact">
       <SectionDivider />
-        <SectionSubTitle size>
+        <SectionSubTitle onSize>
           Meus Contatos
         </SectionSubTitle>
       <ContentSection style={{ paddingTop: '30px', }}>
@@ -31,12 +31,12 @@ export default function Contact() {
           </SectionText>
         </SectionInto>
         <SectionInto >
-          <ul 
-            style={{ 
-              display: 'flex', 
+          <ul
+            style={{
+              display: 'flex',
               flexDirection: 'row',
-              alignItems: 'center', 
-              justifyContent: 'center',  
+              alignItems: 'center',
+              justifyContent: 'center',
             }}
           >
             <ListIcons>

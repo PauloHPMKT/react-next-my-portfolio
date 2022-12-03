@@ -6,8 +6,8 @@ import Footer from '../components/Footer'
 import { Container } from './Layout.styles'
 
 export default function TemplateDefault({ children }) {
-  return( 
-    <Container size>
+  return(
+    <Container fontSize>
       <Head>
         <title>Paulo Sérgio | Frontend Dev</title>
       </Head>

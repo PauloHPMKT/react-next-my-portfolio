@@ -15,6 +15,10 @@ const GlobalStyles = createGlobalStyle`
 
 	html {
 		background-color: ${props => props.theme.colors.background1};
+		background-image: url(/images/bg-banner.png);
+		background-repeat: no-repeat;
+		background-position: left;
+		background-size: 70%;
 	}
 
 	h1,h2,h3,h4 {

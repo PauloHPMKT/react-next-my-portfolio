@@ -14,7 +14,7 @@ export const Section = styled.section`
 export const ContentSection = styled.div`
   display: flex;
   flex-direction: ${({ row }) => row ? 'row' : 'column'};
-  justify-content: center;
+  justify-content: ${({ justifyPosition }) => justifyPosition ? 'space-between' : 'center'};
   align-items: center;
 
   @media ${(props => props.theme.breakpoints.mlg)} {
@@ -90,7 +90,7 @@ export const ImageContainer = styled.div `
   width: ${({ center }) => center ? '50%' : '100%'};
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: ${({ startPosition }) => startPosition ? 'flex-start' : 'center'};
 
   @media ${(props => props.theme.breakpoints.mlg)} {
     width: 100%;
