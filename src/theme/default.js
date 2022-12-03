@@ -5,13 +5,22 @@ export default {
     title: "Open Sans, sans-serif",
     main: "Open Sans, sans-serif",
     secondary_size: "20px",
-    text: "24px"
+    text: "24px",
+		//font-weight
+		fontWeight: {
+			thin: 100,
+			light: 300,
+			regular: 400,
+			medium: 500,
+			bold: 700,
+			extraBold: 900,
+		}
   },
   // Colors for layout
   colors: {
-    primary1: "#b10101",
+    primary1: "#f18c27",
     secondary_color: "#fff",
-    background1: "#000",
+    background1: "#08013c",
     text_color: "#cecece",
   },
   // Breakpoints for responsive design
