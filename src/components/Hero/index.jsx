@@ -14,7 +14,6 @@ import { SectionTitle, ImageHero } from "./Hero.styles"
 import PersonalImage from '../../../public/images/pic-avatar.png'
 
 export default function Hero() {
-
   return(
     <Section>
       <ContentSection row>
@@ -22,7 +21,7 @@ export default function Hero() {
           <SectionTitle main>
             Paulo Sérgio
           </SectionTitle>
-          <SectionText size>
+          <SectionText onSize>
             Olá tudo bem? Sou desenvolvedor web focado na área de Front-end utilizando tecnologias da stack de JavaScript como React e Vue JS. Juntos podemos criar soluções inteligentes.
 						<br/><br/>
 						Conheça mais sobre meus trabalhos!

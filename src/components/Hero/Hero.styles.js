@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const ImageHero = styled.div`
 	padding: 10px;
-	background-color: #009acc;
 	width: 520px;
 	height: 550px;
 	transition: 0.6s all;
@@ -36,7 +35,7 @@ export const ImageHero = styled.div`
 
 export const SectionTitle = styled.h1`
 	font-weight: 800;
-	font-size: ${(props) => (props.main ? "75px" : "60px")};
+	font-size: ${({ main }) => main ? "75px" : "60px"};
 	width: max-content;
 	max-width: 100%;
 	background-color: #fff;
@@ -46,11 +45,11 @@ export const SectionTitle = styled.h1`
 	-webkit-text-fill-color: transparent;
 	margin-bottom: 20px;
 
-	@media ${(props) => props.theme.breakpoints.mxl} {
-		font-size: ${(props) => (props.main ? "59px" : "50px")};
+	@media ${props => props.theme.breakpoints.mxl} {
+		font-size: ${props => props.main ? "59px" : "50px"};
 	}
 
-	@media ${(props) => props.theme.breakpoints.xs} {
+	@media ${props => props.theme.breakpoints.xs} {
 		font-size: 45px;
 	}
 `;
