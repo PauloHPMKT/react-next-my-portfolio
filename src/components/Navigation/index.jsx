@@ -4,12 +4,13 @@ import Link from "next/link"
 import { AiOutlineBars, AiFillCloseCircle } from 'react-icons/ai'
 
 import MenuToggle from "../MenuMobile"
+import { Routers } from "../../../constants/router"
 
-import { 
-  Navigate, 
-  MenuBar, 
-  LinkMenu, 
-  MenuMobile 
+import {
+  Navigate,
+  MenuBar,
+  LinkMenu,
+  MenuMobile
 } from "./Navigation.styles"
 
 
@@ -31,38 +32,25 @@ const handleMenuClose = () => {
   return(
     <Navigate>
       <MenuBar>
-        <li>
-          <Link href="/" passHref>
-            <LinkMenu>Home</LinkMenu>
-          </Link>
-        </li>
-        <li>
-          <Link href="/#about" passHref>
-            <LinkMenu>About me</LinkMenu>
-          </Link>
-        </li>
-        <li>
-          <Link href="/#skills" passHref>
-            <LinkMenu>Skills</LinkMenu>
-          </Link>
-        </li>
-        <li>
-          <Link href="/#portfolio" passHref>
-            <LinkMenu>Portfolio</LinkMenu>
-          </Link>
-        </li>
+        {
+					Routers.map(router => (
+						<li key={router.idRouter}>
+							<Link href={router.path} passHref>
+								<LinkMenu>{router.name}</LinkMenu>
+							</Link>
+						</li>
+					))
+				}
       </MenuBar>
       <MenuMobile active>
         {
-          menuClose 
+          menuClose
             ? <AiFillCloseCircle onClick={() => handleMenuClose()} />
-            : <AiOutlineBars onClick={() => handleMenuOpen()} /> 
+            : <AiOutlineBars onClick={() => handleMenuOpen()} />
         }
       </MenuMobile>
       {
-        toggleMenu && (
-          <MenuToggle />  
-        )
+        toggleMenu && <MenuToggle />
       }
     </Navigate>
   )

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Navigate = styled.nav `
-    display: flex; 
+    display: flex;
 `
 
 export const MenuBar = styled.ul `
@@ -14,12 +14,12 @@ export const LinkMenu = styled.a `
     padding: 15px 20px;
     font-size: ${props => props.theme.fonts.secondary_size};
     font-weight: 600;
-    cursor: pointer; 
+    cursor: pointer;
     transition: .4s ease;
 
     &:hover {
-        color: red;
-        background-color: #fff;
+        color: ${props => props.theme.colors.secondary_color};
+        background-color: ${props => props.theme.colors.primary1};
         border-radius: 20px;
     }
 
