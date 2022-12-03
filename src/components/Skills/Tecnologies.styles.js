@@ -2,9 +2,9 @@ import styled from 'styled-components'
 
 export const List = styled.ul `
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap:wrap;
-    padding-top: 60px;
+    padding-top: 10px;
 
     @media ${(props => props.theme.breakpoints.md)} {
         padding-top: 30px;
@@ -27,7 +27,7 @@ export const ListItem = styled.li `
     cursor: pointer;
 
     &:hover {
-        box-shadow: 0 8px 20px 0 rgba(255, 0, 0, 0.37);
+        box-shadow: 0 8px 20px 0 #f18c2750;
         animation: floating 2s ease-in-out infinite;
         /*animation floating card*/
         @keyframes floating {
@@ -59,7 +59,7 @@ export const ListItem = styled.li `
 export const ListContainer = styled.div `
     display: flex;
     flex-direction: column;
-    margin-left: 18px;  
+    margin-left: 18px;
 `
 
 

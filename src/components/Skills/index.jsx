@@ -1,27 +1,27 @@
 import { Skills } from "./Skills"
 
-import { 
-  List, 
-  ListContainer, 
-  ListItem, 
+import {
+  List,
+  ListContainer,
+  ListItem,
 } from "./Tecnologies.styles"
-import { 
-  Section, 
+import {
+  Section,
   SectionDivider,
-  SectionSubTitle, 
-  SectionText, 
+  SectionSubTitle,
+  SectionText,
   ListTitle,
-  ListParagraph, 
+  ListParagraph,
 } from "../../styles/globalComponentsStyles"
 
 export default function Tecnologies() {
   return(
     <Section id="skills">
       <SectionDivider />
-      <SectionSubTitle size>
+      <SectionSubTitle fontSize>
         Minhas Skills
       </SectionSubTitle>
-      <SectionText size>
+      <SectionText fontSize>
         Tecnologias as quais eu me aperfeiçoo como desenvolvedor para criar e manter meus projetos
       </SectionText>
       <List>
