@@ -6,15 +6,15 @@ function MyApp({ Component, pageProps }) {
   return(
     <Theme>
       <NextNProgress
-        color="#b10101"
+        color="#f18c27"
         startPosition={0.3}
         stopDelayMs={200}
         height={4}
         showOnShallow={true}
       />
       <Component {...pageProps} />
-    </Theme> 
-  ) 
+    </Theme>
+  )
 }
 
 export default MyApp
