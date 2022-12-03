@@ -13,7 +13,7 @@ export const Section = styled.section`
 
 export const ContentSection = styled.div`
   display: flex;
-  flex-direction: ${props => props.row ? 'row' : 'column'};
+  flex-direction: ${({ row }) => row ? 'row' : 'column'};
   justify-content: center;
   align-items: center;
 
@@ -22,11 +22,10 @@ export const ContentSection = styled.div`
   }
 `
 
-
 export const SectionInto = styled.div `
   display: flex;
   flex-direction: column;
-  width: ${props => props.center ? '50%' : '100%'};
+  width: ${({ center }) => center ? '50%' : '100%'};
 
   @media ${(props => props.theme.breakpoints.mlg)} {
     width: 100%;
@@ -34,20 +33,19 @@ export const SectionInto = styled.div `
   }
 `
 
-
 export const SectionSubTitle = styled.h2`
-  font-weight: 600;
-  font-size: ${props => props.size ? '56px' : '40px'};
+  font-weight: ${props => props.theme.fonts.fontWeight.bold};
+  font-size: ${({ onSize }) => onSize ? '56px' : '40px'};
   max-width: 100%;
   width: max-content;
-  background: linear-gradient(121.57deg, #FFFFFF 40.77%, #b10101 60.15%);
+  background: #fff;//linear-gradient(121.57deg, #FFFFFF 40.77%, #b10101 60.15%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-bottom: 20px;
 
   @media ${(props => props.theme.breakpoints.md)} {
-    font-size: ${(props => props.size ? '39px' : '30px')};
+    font-size: ${(({ onSize }) => onSize ? '39px' : '30px')};
   }
 
   @media ${(props => props.theme.breakpoints.sm)} {
@@ -55,27 +53,25 @@ export const SectionSubTitle = styled.h2`
   }
 `
 
-
 export const SectionText = styled.p `
-  font-size: ${props => props.theme.fonts.text};
+  font-size: ${props => props.theme.fonts.primary_size};
+	font-family: ${props => props.theme.fonts.textFamily};
+  font-weight: ${props => props.theme.fonts.fontWeight.light};
   color: ${props => props.theme.colors.text_color};
-  font-weight: 300;
   letter-spacing: 2px;
   margin-bottom: 20px;
 
   @media ${(props => props.theme.breakpoints.sm)} {
-    font-size: ${props => props.size ? '20px' : '17px'};
+    font-size: ${({ onSize }) => onSize ? '20px' : '17px'};
   }
 `
 
-
 export const ListTitle = styled.h3 `
     font-size: ${props => props.theme.fonts.secondary_size};
-    font-weight: 700;
+    font-weight: ${props => props.theme.fonts.fontWeight.bold};
     letter-spacing: 0.02em;
     margin-bottom: 8px;
 `
-
 
 export const ListParagraph = styled.p `
     font-size: 15px;
@@ -83,16 +79,15 @@ export const ListParagraph = styled.p `
     margin-bottom: 30px;
 `
 
-
 export const SectionDivider = styled.div `
   width: 200px;
   height: 5px;
-  background: linear-gradient(#121212, #b10101);
+  background: ${props => props.theme.colors.primary1};
   border-radius: 3px;
 `
 
 export const ImageContainer = styled.div `
-  width: ${props => props.center ? '50%' : '100%'};
+  width: ${({ center }) => center ? '50%' : '100%'};
   display: flex;
   justify-content: center;
   align-items: center;
